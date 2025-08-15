@@ -63,10 +63,7 @@ int main() {
     scanf("%d", &pontosTuristicos1);
 
     // -- Criacao do codigo 1
-    codigoDaCarta1[0]= estado1;
-    codigoDaCarta1[1]= '0';
-    codigoDaCarta1[2]= numeroDaCarta1;
-    codigoDaCarta2[3] = '\0';
+    sprintf(codigoDaCarta1, "%c0%c", estado1, numeroDaCarta1);
 
     // --- Introdução dos Dados da Cidade 2 ---
     printf("Digite o caracter do estado 2:\n");
@@ -89,10 +86,7 @@ int main() {
     printf("Digite o número de pontos turísticos do estado 2:\n");
     scanf("%d", &pontosTuristicos2);
      // -- Criacao do codigo 
-    codigoDaCarta2[0]= estado2;
-    codigoDaCarta2[1]= '0';
-    codigoDaCarta2[2]= numeroDaCarta2;
-    codigoDaCarta2[3] = '\0';
+    sprintf(codigoDaCarta2, "%c0%c", estado2, numeroDaCarta2);
 
 
      // --- Exibicao dos Dados da Cidade 1 ---
